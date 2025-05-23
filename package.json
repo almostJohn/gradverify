@@ -11,31 +11,56 @@
 		"postinstall": "prisma generate"
 	},
 	"dependencies": {
+		"@auth/prisma-adapter": "^2.9.1",
 		"@aws-sdk/client-s3": "^3.812.0",
 		"@aws-sdk/s3-request-presigner": "^3.812.0",
 		"@prisma/client": "^6.8.2",
 		"@radix-ui/react-avatar": "^1.1.9",
-		"@radix-ui/react-dropdown-menu": "^2.1.14",
+		"@radix-ui/react-checkbox": "^1.3.2",
+		"@radix-ui/react-dialog": "^1.1.14",
+		"@radix-ui/react-dropdown-menu": "^2.1.15",
 		"@radix-ui/react-label": "^2.1.6",
 		"@radix-ui/react-popover": "^1.1.14",
+<<<<<<< HEAD
+=======
+		"@radix-ui/react-scroll-area": "^1.2.9",
+>>>>>>> 8e55d413778938a91ee64cb3d06964ebf00c4185
 		"@radix-ui/react-select": "^2.2.4",
 		"@radix-ui/react-slot": "^1.2.3",
 		"@radix-ui/react-tabs": "^1.1.11",
+		"@radix-ui/react-toast": "^1.2.14",
 		"@react-email/components": "^0.0.41",
+		"@shadcn/ui": "^0.0.4",
+		"@tiptap/extension-link": "^2.12.0",
+		"@tiptap/react": "^2.12.0",
+		"@tiptap/starter-kit": "^2.12.0",
+		"@types/exceljs": "^0.5.3",
+		"@types/json2csv": "^5.0.7",
+		"@types/pdfkit": "^0.13.9",
 		"bcrypt": "^6.0.0",
 		"bcryptjs": "^3.0.2",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
-		"date-fns": "^4.1.0",
+		"date-fns": "^3.6.0",
 		"date-fns-tz": "^3.2.0",
+		"exceljs": "^4.4.0",
 		"jose": "^6.0.11",
+		"json2csv": "^6.0.0-alpha.2",
+		"jspdf": "^3.0.1",
 		"lucide-react": "^0.511.0",
 		"next": "15.3.2",
+		"next-auth": "^4.24.11",
+		"pdfkit": "^0.17.1",
 		"prisma": "^6.8.2",
-		"react": "^19.0.0",
+		"react": "18.2.0",
 		"react-datepicker": "^8.3.0",
 		"react-day-picker": "^8.10.1",
+<<<<<<< HEAD
 		"react-dom": "^19.0.0",
+=======
+		"react-dom": "18.2.0",
+		"recharts": "^2.15.3",
+>>>>>>> 8e55d413778938a91ee64cb3d06964ebf00c4185
 		"resend": "^4.5.1",
 		"sonner": "^2.0.3",
 		"tailwind-merge": "^3.3.0",
@@ -48,10 +73,16 @@
 		"@testing-library/react": "^16.3.0",
 		"@testing-library/user-event": "^14.6.1",
 		"@types/bcrypt": "^5.0.2",
+		"@types/bcryptjs": "^2.4.6",
 		"@types/node": "^20",
+<<<<<<< HEAD
 		"@types/react": "^19",
 		"@types/react-datepicker": "^6.2.0",
 		"@types/react-dom": "^19",
+=======
+		"@types/react": "18.2.0",
+		"@types/react-dom": "18.2.0",
+>>>>>>> 8e55d413778938a91ee64cb3d06964ebf00c4185
 		"@vitejs/plugin-react": "^4.4.1",
 		"@vitest/coverage-v8": "^3.1.3",
 		"eslint": "^9",
@@ -65,5 +96,8 @@
 		"vite": "^6.3.5",
 		"vite-tsconfig-paths": "^5.1.4",
 		"vitest": "^3.1.3"
+	},
+	"prisma": {
+		"seed": "tsx prisma/seed.ts"
 	}
 }
