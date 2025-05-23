@@ -1,3 +1,0 @@
--- AlterTable
-ALTER TABLE "StudentProfile" ALTER COLUMN "awardStatus" SET DEFAULT 'NOT_SUBMITTED',
-ALTER COLUMN "psaStatus" SET DEFAULT 'NOT_SUBMITTED';
