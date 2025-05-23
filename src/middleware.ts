@@ -16,7 +16,6 @@ export async function middleware(request: NextRequest) {
 	const { user, invalidToken } = await getSessionUserWithStatus<AuthPayload>();
 	const isAuthenticated = !!user;
 
-	// Force logout on invalid token
 	if (invalidToken) {
 		const response = NextResponse.redirect(new URL("/login", request.url));
 		response.cookies.delete(SESSION_TOKEN);
